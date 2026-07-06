@@ -17,6 +17,7 @@ Based on the [**GitHub User Activity**](https://roadmap.sh/projects/github-user-
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
+- [Dependencies](#dependencies)
 - [Usage](#usage)
 - [Examples](#examples)
 - [Interactive TUI](#interactive-tui)
@@ -36,7 +37,6 @@ Based on the [**GitHub User Activity**](https://roadmap.sh/projects/github-user-
 - API call logging with file locking
 - Supports 14+ GitHub event types
 - Cross-platform
-- Zero external dependencies (CLI mode)
 
 ---
 
@@ -71,6 +71,17 @@ You can also run directly without building:
 ```bash
 go run . view torvalds
 ```
+
+---
+
+## Dependencies
+
+| Package | Purpose |
+|---|---|
+| [bubbletea](https://github.com/charmbracelet/bubbletea) | TUI framework |
+| [bubbles](https://github.com/charmbracelet/bubbles) | Pre-built UI components (text input, spinner, viewport) |
+| [lipgloss](https://github.com/charmbracelet/lipgloss) | Terminal styling |
+| [gofrs/flock](https://github.com/gofrs/flock) | Cross-platform file locking for log writes |
 
 ---
 
